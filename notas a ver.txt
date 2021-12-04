@@ -1,0 +1,9 @@
+Jogo da velha:
+- background-color do Jogador dxr menor
+- verificar tam dos botões pra dxr menor 
+
+Jogo da cobrinha:
+- botão para começar e reiniciar, pq ja começa no pau
+
+Jogo da Magica:
+- verificar pra aumentar tam das tabelas e o botão embaixor

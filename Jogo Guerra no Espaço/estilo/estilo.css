@@ -1,0 +1,97 @@
+@font-face{
+font-family: "space";
+src: url("../estilo/space.ttf");
+}
+
+@font-face{
+	font-family:"space2";
+	src: url("../estilo/space2.ttf");
+}
+
+*{
+ padding:0;
+ margin: 0;
+}
+body{
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(57,4,59,1) 35%, rgba(57,0,69,1) 100%);
+}
+
+p.boxmodel2 {
+    width: 300px;
+    height: 150px;
+    background: #900;
+    color: #FFF;
+    padding: 20px;
+    border: 5px solid #CCC;
+}
+#tituspace p{
+	margin-top:20px;
+	z-index:1;
+	font-family: space;
+	color:  #FFFFFF;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	font-size:60px;
+}
+
+#jogar input{
+    z-index:2;
+    margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	cursor:pointer;
+	width:8vw;
+	height: 4vw;
+	font-size:28px;
+	color:rgb(255, 255, 255);
+    font-weight: bold;
+    background-color:purple;
+    border-radius: 70px;
+    box-shadow: 0px 5px 0px black;
+}
+
+#jogar input:hover{
+    background-color:#520480;
+}
+
+#tocarMusica{
+    margin-left:10px;
+    border: 2px solid gray;
+    margin-top:20px;
+    position:absolute;
+    border-radius:60px;
+    font-weight:bold;
+    cursor:pointer;
+    font-family: Consolas;
+    font-size:17px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(177, 177, 177);
+    transition:all 0.3s;
+}
+#tocarMusica:hover{
+    background-color:rgb(255, 253, 253);
+}		
+#mutarMusica{
+    margin-left:10px;
+    border: 2px solid gray;
+    margin-top:20px;
+    position:absolute;
+    border-radius:60px;
+    visibility:hidden;
+    font-weight:bold;
+    cursor:pointer;
+    font-family: Consolas;
+    font-size:17px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(177, 177, 177);
+    transition:all 0.3s;
+}
+#mutarMusica:hover{
+    background-color:rgb(255, 253, 253);
+}	

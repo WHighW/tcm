@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Jogo da Cobrinha</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="../img/pngegg (1).png">
+</head>
+
+<body>
+	<button id="tocarMusica" onclick="tocarMusica()">&#9654</button>
+	<button id="mutarMusica" onclick="mutarMusica()">&#9616;&nbsp;&#9612</button>
+		<div class="titulo">
+			<p id="snake">Jogo da Cobrinha</p>
+			<p id="modo">Clique no botão para começar a jogar!</p>
+		</div>
+		
+		<div id="setas">
+			<img src="./img/arrow.png" width="400" height="322">
+			<p>CONTROLES DA COBRINHA</p>
+		</div>
+		
+		<center>
+			<div class="botoes">
+				<div id="normal"><input type="button" value="JOGAR" onclick="normal()"></a></div>
+				<div id="voltar"><a href="../index.html"><input type="button" value="VOLTAR" id="voltar"></a></div>
+				<div id="sair"><a href="index.html"><input type="button" value="&lArr;" style="text-align: center;"></a></div>
+				<div id="reiniciar"><input type="button" value="REINICIAR" onclick="init()">
+			</div>
+		</center>
+	<div id="principal"></div>
+    <div id="pontuacao"></div>
+	
+	<div id="message"></div>
+
+    <script src="js/normal.js"></script>
+</body>
+</html>

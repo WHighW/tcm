@@ -1,0 +1,579 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: "fonte1";
+    src: url("Matrix\ Zone.ttf");
+}
+
+@font-face {
+    font-family: "fonte2";
+    src: url("GAME_glm.ttf");
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(255, 255, 255);
+}::-webkit-scrollbar-thumb{
+    width: 7px;
+    background-color:purple;
+    border-radius: 10px;
+}::-webkit-scrollbar-thumb:hover{
+    cursor: pointer;  
+}
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding:0;
+}    
+
+body{
+width: 100%;
+height: 100%;
+margin: 0 auto;
+background:linear-gradient(0deg, yellow, transparent 70%);
+}
+
+/* Tratamento do título */
+.logo{
+    text-align: center;
+  
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    display: flex;
+    
+    justify-content: center;
+    flex-wrap: wrap;
+  
+    -webkit-box-align: center;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#logo-nome p{
+font-family: fonte1;
+font-size: 80px;
+text-align: center;
+padding-bottom: 30px;
+}
+
+#logo-img{
+    position:absolute;
+    margin-right:835px;
+    transform: rotate(5deg);
+    margin-top:3px;
+}
+#logo-img2{
+    position:absolute;
+    margin-left:830px;
+    transform: rotate(0deg);
+    margin-top:1px;
+}
+
+.neon{
+    text-shadow: 0 0 20px #ea00ff;
+    color:white;
+}
+.neon::after{
+    content: attr(data-text);
+    position:absolute;
+    top:0;
+    left: 0;
+    padding:0 20 px;
+    z-index: -1;
+    color: #ea00ff;
+    filter: blur(15px);
+}
+.neon::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#ea00ff;
+    z-index: -2;
+    opacity: -5;
+    filter: blur(40px);
+}
+
+/* Tratamento do menu de páginas */
+.topo {
+font-family:arial;
+background-color: #000000;
+width: 1000px;
+margin: 0 auto;
+padding:30px;
+}
+
+.menu-principal {
+background-color: #000000;
+height: 100px;
+}
+
+.menu-urls {
+padding-top: -5px;
+height: 100px;
+border-bottom: 3px solid #000000;
+background-color: black;
+border-top: 2px solid purple;
+}
+
+.menu ul li {
+    display: inline-block;
+    color: #ffffff;
+    margin-left: 15px;
+    height: 25px;
+    margin-top: -25px;
+}
+
+.menu ul li a:hover {
+    color: purple;
+}
+
+.menu ul li a {
+    transition:all 0.3s;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.menu {
+width: 70%;
+float: left;
+margin-top: 15px;
+margin-left: 5px;
+}
+
+/* Tratamento da posição da caixa de pesquisa */
+.pesquisa{
+    text-align: center;
+    width: 30%;
+    float: right;
+    margin-right: 65px;
+    margin-top: -40px;
+}
+
+/* Tratamento da caixa de pesquisa de busca */
+.busca {
+    height: 35px;
+    padding: 9px;
+    width: 300px;
+    margin-top: 7px;
+    background-position: 96%;
+    border: 3px solid purple;
+    border-radius: 5px;
+}
+
+/* Tratamento do botão de buscar em forma de lupa */
+.btnBusca{
+    background-color: purple;
+    padding: 5px 10px;
+    cursor: pointer;
+    float:right;
+    position:absolute;
+    margin-top:7px;
+    margin-left: 4px;
+    border-radius: 5px;
+}
+.btnBusca:hover{
+    background-color: #898989;
+}
+.btnBusca:active{
+    background-color: purple;
+    transform: translateY(2px);
+}
+
+/* Tratamento dos Sliders */
+#slider {
+	margin:auto;
+	margin-top:90px;
+	position: relative;
+	width: 1000px;
+	height: 530px;
+	overflow: hidden;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    border: 3px solid ;
+    margin-bottom:300px;
+}
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider ul li {
+  position: relative;
+  height: 100%;
+  float: left;
+}
+#slider ul li img{
+    width: 1000px;
+	height: 530px;
+} 
+#slider #ant, #slider #prox {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+#slider #ant:hover, #slider #prox:hover {
+  background-color: purple;
+  text-shadow: 0;
+}
+#slider #ant {
+  left: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0); 
+}
+#slider #prox {
+  right: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+/* Titulo da seção de jogos (abaixo dos sliders) */
+.titulojogos{
+    color: purple;
+    font-size: 60px;
+    font-family: fonte2;
+    position: relative;
+    margin-top: 200px;
+}
+.titulojogos p{
+    text-align:center;
+}
+
+/* Seção de Jogos */
+.joguinhos{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    float: left;
+    padding-top: 40px;
+    height: 90px;
+    margin-bottom:400px;
+}
+
+.joguinhos2{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    float: left;
+    height: 90px;
+    margin-bottom:500px;
+}
+
+.joguinhos a{
+    text-decoration:none;
+}
+
+.joguinhos2 a{
+    text-decoration:none;
+}
+
+/* Jogo da Velha */
+.joguinhos #velha{
+    width: 220px;
+    height: 355px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.796);
+    transition: all 0.3s;
+}
+.joguinhos #tituvelha{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    font-size: 23px;
+}
+.joguinhos #descvelha{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding-top: 6px;
+}
+.joguinhos #velha:hover{
+    padding:50px;
+}
+
+/* Jogo da Cobrinha */
+.joguinhos #cobra{
+    text-align: center;
+    width: 220px;
+    height: 355px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.796);
+    margin-bottom: 100px;
+    margin-left: 50px;
+    transition: all 0.3s;
+}
+.joguinhos #titucobra{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    font-size: 23px;
+}
+.joguinhos #desccobra{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding-top: 6px;
+    width: 210px;
+}
+.joguinhos #cobra:hover{
+    padding:50px;
+}
+
+/* Jogo da Mágica */
+.joguinhos #magica{
+    text-align: center;
+    width: 220px;
+    height: 355px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.796);
+    margin-bottom: 100px;
+    margin-left: 50px;
+    transition: all 0.3s;
+}
+.joguinhos #titumagica{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    font-size: 23px;
+}
+.joguinhos #descmagica{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding-top: 6px;
+    width: 210px;
+}
+.joguinhos #magica:hover{
+    padding:50px;
+}
+
+/* Jogo do Space invaders */
+.joguinhos2 #velha{
+    width: 220px;
+    height: 355px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.796);
+    transition: all 0.3s;
+}
+
+.joguinhos2 #tituvelha{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    font-size: 23px;
+}
+.joguinhos2 #descvelha{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding-top: 6px;
+}
+.joguinhos2 #velha:hover{
+    padding:50px;
+}
+
+/* Jogo do Breakout */
+
+.joguinhos2 #cobra{
+    text-align: center;
+    width: 220px;
+    height: 355px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.796);
+    margin-bottom: 100px;
+    margin-left: 50px;
+    transition: all 0.3s;
+}
+.joguinhos2 #titucobra{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    font-size: 23px;
+}
+.joguinhos2 #desccobra{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding-top: 6px;
+    width: 210px;
+}
+.joguinhos2 #cobra:hover{
+    padding:50px;
+}
+
+/* Geometric Dash */
+
+.joguinhos2 #magica{
+    text-align: center;
+    width: 220px;
+    height: 355px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.796);
+    margin-bottom: 100px;
+    margin-left: 50px;
+    transition: all 0.3s;
+}
+.joguinhos2 #titumagica{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    font-size: 23px;
+}
+.joguinhos2 #descmagica{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding-top: 6px;
+    width: 210px;
+}
+.joguinhos2 #magica:hover{
+    padding:50px;
+}
+
+/* Seção de sobre história */
+#sobrenos{
+    background-color:red;
+    margin-bottom:50px;
+    margin-top:500px;
+    font-size:40px;
+    text-align:center;
+}
+
+/* Rodapé */
+footer{
+    background-color: black;
+    animation-name: anima1;
+    animation-duration: 12s;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    max-height: 230px;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -7px 2px 17px 0px black;
+}
+.footer{
+    display: flex;
+    margin-left: 25px;   
+    align-items:center;
+    border-bottom: 1px solid purple;
+    padding-bottom: 20px;
+}
+#titulorodape{
+    font-size: 1.5em;
+    color: purple;
+    margin: 0px;
+}
+
+/* Imagems rodapé */
+.redesociais{
+    margin-top: -55px;
+    margin-right: 10pc;
+}
+
+.logos{
+    position: absolute;
+}
+
+.insta{
+    width: 32px;
+    height: 32px;
+    -webkit-filter:grayscale(100%);
+}
+
+.insta:hover{
+    -webkit-filter:grayscale(0%);
+    transition: 0.5s;
+}
+
+.facebook{
+    width: 32px;
+    height: 32px;
+    -webkit-filter:grayscale(100%);
+}
+.facebook:hover{
+    -webkit-filter:grayscale(0%);
+    transition: 0.5s;
+}
+
+.linkedin{
+    width: fit-content 32px;
+    height: 32px;
+    margin-left: 25px;
+    margin-right: 20px;
+    -webkit-filter:grayscale(100%);
+}
+
+.linkedin:hover{
+    -webkit-filter:grayscale(0%);
+    transition: 0.5s;
+}
+
+/* Endereço no rodapé */
+.endereco{
+    margin-left: 40px;
+    margin-right: 135px;
+    margin-top: 6px;;
+    padding-top: 2px;
+}
+#contendereco{
+    color: rgb(255, 255, 255);
+    padding-left: 0;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/* Contato do rodapé */
+#contato{
+    margin-left: 40px;
+    margin-top: 6px;;
+    padding-top: 2px;
+}
+
+#contatonumero{
+    padding-top: 6px;
+    color:rgb(255, 255, 255);
+}
+
+#contatoemail a{
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#contatoemail a:hover{
+    color: #898989;
+}
+
+.copy p{
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+}

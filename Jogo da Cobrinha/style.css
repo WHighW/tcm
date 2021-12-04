@@ -1,0 +1,89 @@
+
+body {
+    display: block;
+    background-image: linear-gradient(to left bottom, #a8eb12, #92d613, #7dc013, #6aac11, #57970f);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+}
+
+#setas{
+    width: 363px;
+    height: 292px;
+    position:absolute;
+    left: 42%;
+    top: 10%;
+}
+
+.setin{
+    position:absolute;
+    left: 41%;
+    top: 40%;
+    font-size: 25px;
+}
+
+.botoes{
+    padding:0;
+    margin: auto;
+}
+
+.botoes input{
+    cursor:pointer;
+	width:8vw;
+	height: 4vw;
+	font-size:28px;
+	color:rgb(255, 255, 255);
+    font-weight: bold;
+    background-color:#ffa600;
+    border-radius: 70px;
+    box-shadow: 0 5px 0 rgb(0, 0, 0);
+}
+.botoes input:hover{
+    background-color:#fcc922;
+    
+}
+
+#iniciar{
+    position:absolute;
+    left: 40%;
+    top: 50%;
+}
+
+#voltar{
+    position:absolute;
+    left: 55%;
+    top: 50%;
+}
+
+#reiniciar{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#reiniciar input{
+    cursor:pointer;
+    font-size:50px;
+	width:8vw;
+	height: 4vw;
+	font-size:1em;
+	color:#000;
+    background-color:#FFFF00;
+}
+
+#pontuacao{
+    font-family:verdana;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#stage{
+    padding: 0;
+    margin: auto;
+    width: 800px;
+}
