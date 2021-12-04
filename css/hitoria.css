@@ -24,8 +24,8 @@ html{
 }
 
 *{
-    margin: 0;
-    padding:0;
+    margin:0;
+    padding: 0;
 }    
 
 body{
@@ -56,10 +56,10 @@ body{
 }
 
 #logo-nome p{
-font-family: fonte1;
-font-size: 80px;
-text-align: center;
-padding-bottom: 30px;
+    font-family: fonte1;
+    font-size: 80px;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 #logo-img{
@@ -269,7 +269,7 @@ margin-left: 5px;
     width: 100%;
     float: left;
     padding-top: 40px;
-    height: 100px;
+    height: 90px;
     margin-bottom:400px;
 }
 
@@ -278,7 +278,7 @@ margin-left: 5px;
     justify-content: center;
     width: 100%;
     float: left;
-    height: 100px;
+    height: 90px;
     margin-bottom:500px;
 }
 
@@ -293,7 +293,7 @@ margin-left: 5px;
 /* Jogo da Velha */
 .joguinhos #velha{
     width: 220px;
-    height: 368px;
+    height: 355px;
     float: left;
     background-color: rgba(0, 0, 0, 0.796);
     transition: all 0.3s;
@@ -318,7 +318,7 @@ margin-left: 5px;
 .joguinhos #cobra{
     text-align: center;
     width: 220px;
-    height: 368px;
+    height: 355px;
     float: left;
     background-color: rgba(0, 0, 0, 0.796);
     margin-bottom: 100px;
@@ -346,7 +346,7 @@ margin-left: 5px;
 .joguinhos #magica{
     text-align: center;
     width: 220px;
-    height: 368px;
+    height: 355px;
     float: left;
     background-color: rgba(0, 0, 0, 0.796);
     margin-bottom: 100px;
@@ -364,7 +364,6 @@ margin-left: 5px;
     color: rgb(255, 255, 255);
     font-size: 14px;
     padding-top: 6px;
-    padding-left: 3px;
     width: 210px;
 }
 .joguinhos #magica:hover{
@@ -454,6 +453,26 @@ margin-left: 5px;
     padding:50px;
 }
 
+/* Seção de sobre história */
+.historia{
+    padding-top: 50px;
+}
+
+#tituhis{
+    color: purple;
+    font-size: 60px;
+    font-family: fonte2;
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#txthistoria{
+    font-size: 30px;
+    text-align: center;
+}
+
 /* Rodapé */
 footer{
     background-color: black;
@@ -515,8 +534,8 @@ footer{
 }
 
 .linkedin{
-    width: fit-content 33px;
-    height: 33px;
+    width: fit-content 32px;
+    height: 32px;
     margin-left: 25px;
     margin-right: 20px;
     -webkit-filter:grayscale(100%);
