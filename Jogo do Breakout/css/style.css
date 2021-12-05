@@ -13,6 +13,13 @@ body{
     top: 50%;
     left: 50%;
 }
+#voltar{
+  z-index:2;
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+}
 
 #titulo{
     font-size:30px;
