@@ -1,10 +1,6 @@
 // Música
 var audio = new Audio('sounds/musica.mp3');
-function tocarMusica(){
 audio.play()
-document.getElementById('tocarMusica').style = 'display:none;';
-document.getElementById('mutarMusica').style = 'visibility: visible;';
-}
 
 function mutarMusica(){
 if(audio.muted == true) {

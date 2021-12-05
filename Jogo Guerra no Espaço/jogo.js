@@ -1,10 +1,6 @@
 // Música
 var audio = new Audio('sounds/musica.mp3');
-function tocarMusica(){
 audio.play()
-document.getElementById('tocarMusica').style = 'display:none;';
-document.getElementById('mutarMusica').style = 'visibility: visible;';
-}
 
 function mutarMusica(){
 if(audio.muted == true) {
@@ -572,12 +568,17 @@ function Ship() {
 				this.draw();
 			}
 		}
+
+		if(!this.isColliding == false){
+			document.getElementById('message').innerHTML = "GAME OVER!";
+			document.getElementById('reiniciar').style.visibility = "visible";
+		}
+
 		if (KEY_STATUS.space && counter >= fireRate && !this.isColliding) {
 			this.fire();
 			counter = 0;
 		}
 	};
-
 	/*
 	 * Dispara duas balas
 	 */
@@ -587,7 +588,6 @@ function Ship() {
 	};
 }
 Ship.prototype = new Drawable();
-
 
 /**
  * Crie o objeto nave Inimigo.
@@ -648,8 +648,7 @@ function Enemy() {
 		else {
 			return true;
 		}
-	};
-
+	}
 	/*
 	 * Dispara uma bala
 	 */
@@ -672,11 +671,11 @@ function Enemy() {
 }
 Enemy.prototype = new Drawable();
 
-
  /**
  * Cria o objeto Game que conterá todos os objetos e dados para
  * o jogo.
  */
+
 function Game(){
 	/*
 	 * Obtém informações e contexto da tela e configura todo o jogo
@@ -685,6 +684,7 @@ function Game(){
 	* não é. Isso impede que o script de animação fique constantemente
 	* rodando em navegadores que não suportam o canvas.
 	 */
+
 	this.init = function() {
 		//Obtenha os elementos da tela
 		this.bgCanvas = document.getElementById('background');
@@ -744,7 +744,7 @@ function Game(){
 					x = 100;
 					y += spacer
 				}
-			}
+			};
 
 			this.enemyBulletPool = new Pool(50);
 			this.enemyBulletPool.init("enemyBullet");

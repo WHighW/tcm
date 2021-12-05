@@ -10,7 +10,6 @@
   </head>
   
   <body>
-    <button id="tocarMusica" onclick="tocarMusica()">&#9654</button>
 		<button id="mutarMusica" onclick="mutarMusica()">&#9616;&nbsp;&#9612</button>
     <div id="principal">
       <span id="cu1" style="font-size: 27px">PENSE EM UM NÚMERO de 1 a 63</span><br/><br/>
@@ -340,7 +339,7 @@
     </div>
 	
 	
-	 <script type="text/javascript">
+	<script type="text/javascript">
       function GerarPainel() {
         document.getElementById("principal").innerHTML = document.getElementById("painel").innerHTML
       }
@@ -361,32 +360,28 @@
         }
       }
     // Música
-		var audio = new Audio('sounds/musica.mp3');
-		function tocarMusica(){
-		audio.play()
-		document.getElementById('tocarMusica').style = 'display:none;';
-		document.getElementById('mutarMusica').style = 'visibility: visible;';
-	}
+      var audio = new Audio('sounds/musica.mp3');
+      audio.play()
 
-	function mutarMusica(){
-		if(audio.muted == true) {
-		audio.muted = false;
-	}
-	else if(audio.muted == false) {
-		audio.muted = true;
-	}
+      function mutarMusica(){
+      if(audio.muted == true) {
+        audio.muted = false;
+      }
+      else if(audio.muted == false) {
+        audio.muted = true;
+      }
 
-	var btn = document.getElementById('mutarMusica');
-	if (btn.value == "&#9654") {
-		btn.value = "&#9616;&nbsp;&#9612;";
-		btn.innerHTML = "&#9616;&nbsp;&#9612;";
-	}
-	else{
-		btn.value = "&#9654";
-		btn.innerHTML = "&#9654";
-	}
-}
-    </script>
+      var btn = document.getElementById('mutarMusica');
+        if (btn.value == "&#9654") {
+        btn.value = "&#9616;&nbsp;&#9612;";
+        btn.innerHTML = "&#9616;&nbsp;&#9612;";
+      }
+      else{
+        btn.value = "&#9654";
+        btn.innerHTML = "&#9654";
+      }
+    }
+  </script>
 	
 	
   </body>
