@@ -138,6 +138,7 @@
 		 
 		//velocidade da bola
 		function start(){
+		document.getElementById('voltar').style.top = "90%";
 		document.getElementById('jogar').style.visibility = "hidden";
 		document.getElementById('titulo').style.visibility = "visible";
 		document.getElementById('gameCanvas').style.visibility = "visible"; 
@@ -147,6 +148,7 @@
 		// Música
 		var audio = new Audio('sounds/musica.mp3');
 		audio.play()
+		audio.volume = 0.10;
 
 		function mutarMusica(){
 			if(audio.muted == true) {

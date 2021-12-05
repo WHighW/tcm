@@ -1,6 +1,18 @@
 // Música
 var audio = new Audio('sounds/musica.mp3');
-audio.play()
+if (typeof audio.loop == 'boolean')
+{
+    audio.loop = true;
+    audio.play();
+    audio.volume = 0.15;
+}
+else
+{
+    audio.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+}
 
 function mutarMusica(){
 if(audio.muted == true) {
@@ -119,6 +131,7 @@ function setFood() {
  
  
 function jogar() {
+ document.getElementById("mutarMusica").style.marginTop = "20px";
  document.getElementById("setas").style.display = "inline";
  document.getElementById("snake").style.display = "none";
  document.getElementById("modo").style.display = "none";

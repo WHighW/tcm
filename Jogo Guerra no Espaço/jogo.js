@@ -1,6 +1,7 @@
 // Música
 var audio = new Audio('sounds/musica.mp3');
 audio.play()
+audio.volume = 0.15;
 
 function mutarMusica(){
 if(audio.muted == true) {
