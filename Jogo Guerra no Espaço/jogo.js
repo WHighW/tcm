@@ -28,6 +28,9 @@ var game = new Game();
 function start() {
 	if(game.init())
 		game.start();
+	document.getElementById('voltar').style.display = "none";
+	document.getElementById('voltar2').style.display = 'block';
+	document.getElementById('reiniciar').style.visibility = "visible";
 	document.getElementById('jogar').style.display = "none";
 }
 
@@ -571,7 +574,6 @@ function Ship() {
 
 		if(!this.isColliding == false){
 			document.getElementById('message').innerHTML = "GAME OVER!";
-			document.getElementById('reiniciar').style.visibility = "visible";
 		}
 
 		if (KEY_STATUS.space && counter >= fireRate && !this.isColliding) {

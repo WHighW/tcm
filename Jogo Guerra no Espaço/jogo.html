@@ -36,10 +36,15 @@
 	</head>
 	<body>
 		<button id="mutarMusica" onclick="mutarMusica()">&#9616;&nbsp;&#9612</button>
+
 		<div id="tituspace"><p>Space Invaders</p></div>
+
 		<div id="jogar"><input type="button" value="JOGAR" onclick="start()"></div>
 		<div id="reiniciar"><input type="button" value="REINICIAR" onclick="window.location.reload()"></div>
+		<div id="voltar"><input type="button" value="VOLTAR" onclick="history.back()"></div>
+		<div id="voltar2"><input type="button" value="VOLTAR" onclick="window.location.reload()"></div>
 		<div id="message"></div>
+
 		<!-- The canvas for the panning background -->
 		<canvas id="background" width="800" height="530">
 			Your browser does not support canvas. Please try again with a different browser.

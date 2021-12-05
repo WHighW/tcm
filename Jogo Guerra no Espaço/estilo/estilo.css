@@ -91,11 +91,49 @@ p.boxmodel2 {
   z-index:2;
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
 	cursor:pointer;
 	width:10vw;
+	height: 4vw;
+	font-size:28px;
+	color:rgb(255, 255, 255);
+  font-weight: bold;
+  background-color:purple;
+  border-radius: 70px;
+  box-shadow: 0px 5px 0px black;
+}
+
+#voltar input{
+  display:block;
+  z-index:2;
+  margin: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	cursor:pointer;
+	width:8vw;
+	height: 4vw;
+	font-size:28px;
+	color:rgb(255, 255, 255);
+  font-weight: bold;
+  background-color:purple;
+  border-radius: 70px;
+  box-shadow: 0px 5px 0px black;
+}
+
+#voltar2 input{
+  display:none;
+  z-index:2;
+  margin: 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	cursor:pointer;
+	width:8vw;
 	height: 4vw;
 	font-size:28px;
 	color:rgb(255, 255, 255);

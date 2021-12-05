@@ -10,6 +10,15 @@ canvas {
     margin: auto;
 }
 
+#voltar{
+  z-index:2;
+  margin: 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  
+}
+
 #mutarMusica{
   margin-left:5px;
   border: 2px solid gray;
