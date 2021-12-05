@@ -60,19 +60,20 @@ body{
     font-size: 80px;
     text-align: center;
     padding-bottom: 30px;
+    margin-top: -25px;
 }
 
 #logo-img{
     position:absolute;
     margin-right:835px;
     transform: rotate(5deg);
-    margin-top:3px;
+    margin-top:-40px;
 }
 #logo-img2{
     position:absolute;
     margin-left:830px;
     transform: rotate(0deg);
-    margin-top:1px;
+    margin-top:-40px;
 }
 
 .neon{
@@ -587,4 +588,9 @@ footer{
     margin-top: 40px;
     padding-bottom: 20px;
     color: rgb(255, 255, 255);
+}
+
+#ingles{ 
+margin-top: 8px;
+margin-left: 8px ;
 }
