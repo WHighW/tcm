@@ -1,0 +1,86 @@
+body{
+    background: #36496b;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+#jogar input{
+	z-index:2;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	cursor:pointer;
+	width:8vw;
+	height: 4vw;
+	font-size:28px;
+	color:rgb(255, 255, 255);
+  font-weight: bold;
+  background-color:purple;
+  border-radius: 70px;
+  box-shadow: 0px 5px 0px black;
+}
+
+#jogar input:hover{
+	background-color: ;
+^}
+
+#voltar input{
+  display:block;
+  z-index:2;
+  margin: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	cursor:pointer;
+	width:8vw;
+	height: 4vw;
+	font-size:28px;
+	color:rgb(255, 255, 255);
+  font-weight: bold;
+  background-color:purple;
+  border-radius: 70px;
+  box-shadow: 0px 5px 0px black;
+}
+
+#voltar input:hover{
+	
+}
+
+#titulo{
+    font-size:30px;
+    visibility: hidden;
+}
+
+#gameCanvas {
+    visibility: hidden;
+    border : 1px solid;
+    margin : 0 auto;
+    width : 800px;
+    display : block;
+    margin-top : 50px;
+    background-color : #c7dbff;
+}
+
+#mutarMusica{
+  margin-left:-830px;
+  border: 2px solid gray;
+  margin-top:-2px;
+  position:absolute;
+  border-radius:60px;
+  font-weight:bold;
+  cursor:pointer;
+  font-family: Consolas;
+  font-size:17px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(177, 177, 177);
+  transition:all 0.3s;
+}
+#mutarMusica:hover{
+  background-color:rgb(255, 253, 253);
+}		

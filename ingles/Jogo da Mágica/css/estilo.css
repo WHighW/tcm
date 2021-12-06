@@ -1,0 +1,84 @@
+@font-face{
+  font-family:"pik4";
+  src: url("good\ timing\ bd.ttf");
+}
+
+body{
+  background-color: #1f104f;
+}
+
+#cu1{
+  font-family: pik4;
+
+}
+
+#cu2{
+  font-weight: bold;
+}
+
+table {
+  font-size: 30px;
+  margin: 10px;
+  display: inline;
+  cursor: pointer
+}
+
+td {
+  border: solid 1px #000;
+  text-align: center;
+  width: 21px;
+  height: 21px
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color:transparent;
+}::-webkit-scrollbar-thumb{
+  width: 7px;
+  background-color:rgb(0, 0, 0);
+  border-radius: 10px;
+}::-webkit-scrollbar-thumb:hover{
+  cursor: pointer;  
+}
+
+#principal {
+  padding: 10px;
+  overflow: auto;
+  position: relative;
+  margin: 0 auto;
+  border: dotted 2px #EFEFEF;
+  font: 14px "Comic Sans MS", fantasy;
+  width: 800px; 
+  height: 850px;
+  background-color: #FFFF00;
+  text-align: center;
+}
+
+#painel {
+  display: none
+}
+
+#voltar2{
+  font-size: 15px;
+  font-weight: bold; 
+  cursor: pointer
+}
+
+#mutarMusica{
+  margin-left:10px;
+  border: 2px solid gray;
+  margin-top:-2px;
+  position:absolute;
+  border-radius:60px;
+  font-weight:bold;
+  cursor:pointer;
+  font-family: Consolas;
+  font-size:17px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(177, 177, 177);
+  transition:all 0.3s;
+}
+#mutarMusica:hover{
+  background-color:rgb(255, 253, 253);
+}
