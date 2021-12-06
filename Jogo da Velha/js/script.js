@@ -1,27 +1,3 @@
-// Música
-var audio = new Audio('sounds/musica.mp3');
-audio.play()
-audio.volume = 0.25;
-
-function mutarMusica(){
-if(audio.muted == true) {
-audio.muted = false;
-}
-else if(audio.muted == false) {
-audio.muted = true;
-}
-
-var btn = document.getElementById('mutarMusica');
-if (btn.value == "&#9654") {
-btn.value = "&#9616;&nbsp;&#9612;";
-btn.innerHTML = "&#9616;&nbsp;&#9612;";
-}
-else{
-btn.value = "&#9654";
-btn.innerHTML = "&#9654";
-}
-}
-
 const casas = document.getElementsByTagName('input'); //pega a lista de casas do tabuleiro do jogo
 
 const b_reiniciar = document.getElementById('reiniciar'); //pega o botão de reiniciar

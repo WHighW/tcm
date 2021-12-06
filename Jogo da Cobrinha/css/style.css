@@ -6,7 +6,6 @@ src: url("../css/PressStart2P-Regular.ttf");
 }
 
 body {
-    display: block;
     background-image: linear-gradient(to left bottom, #a8eb12, #92d613, #7dc013, #6aac11, #57970f);
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,57 +35,75 @@ body {
 }
 
 .botoes input{
+    font-weight:bold;
+    font-size:28px;
+    display:inline-block;
     cursor:pointer;
 	width:8vw;
 	height: 4vw;
-	font-size:28px;
 	color:rgb(255, 255, 255);
-    font-weight: bold;
     background-color:#ffa600;
-    border-radius: 70px;
+    border-radius: 2em;
     box-shadow: 0 5px 0 rgb(0, 0, 0);
+    box-sizing: border-box;
 }
 .botoes input:hover{
     background-color:#fcc922;
-    
 }
 
 #setas{
-	display:none;
-	margin-top:250px;
-	margin-left:1150px;
+    max-width: 100%; 
+	display: none;
+    height:auto;
+    max-width: 400px;
+    margin-top:15em;
+    margin-left:75em;
 	position:absolute;
 }
 
 #setas p{
-	font-size:25px;
+    position:absolute;
+    margin-left:30px;
+	font-size:28px;
 	color:white;
 	text-align:center;
 }
 
 #normal{
+    z-index:1;
+    font-size:10vw;
+    width: 100%;
 	position:absolute;
-    display: inline-block;
-    margin-top: 130px;
     margin-left: auto;
     margin-right: auto;
 }
 
 #voltar{
-	left:46%;
-	top:55%;
-	position:absolute;
+    font-size:30vw;
+    left:46%;
+    position: absolute;
+    display:inline-block;
+    text-align:center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
 }
 
 #sair{
+    position:absolute;
     visibility:hidden;
+    top:755px;
+    left:40%;
+}
+
+#reiniciar input{
+    width:180px;
 }
 
 #reiniciar{
+    position:absolute;
+    top:755px;
 	visibility:hidden;
+    left:52%;
 }
 
 #snake{
@@ -105,6 +122,7 @@ body {
 }
 
 canvas {
+    width: 100%;
 	color:black;
     width:600px;
     z-index:-1;
@@ -118,20 +136,21 @@ canvas {
 }
 	
 #mutarMusica{
-    margin-left:10px;
-    border: 2px solid gray;
-    margin-top:-120px;
-    position:absolute;
-    border-radius:60px;
-    font-weight:bold;
-    cursor:pointer;
-    font-family: Consolas;
-    font-size:17px;
-    width: 50px;
-    height: 50px;
-    background-color: rgb(177, 177, 177);
-    transition:all 0.3s;
+  margin:5px;
+  top: 0px;
+  left: 0px;
+  border: 2px solid gray;
+  position:absolute;
+  border-radius:60px;
+  font-weight:bold;
+  cursor:pointer;
+  font-family: Consolas;
+  font-size:17px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(177, 177, 177);
+  transition:all 0.3s;
 }
 #mutarMusica:hover{
-    background-color:rgb(255, 253, 253);
-}
+  background-color:rgb(255, 253, 253);
+}	

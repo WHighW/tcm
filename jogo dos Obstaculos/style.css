@@ -20,9 +20,10 @@ canvas {
 }
 
 #mutarMusica{
-  margin-left:5px;
+  margin:5px;
+  top: 0px;
+  left: 0px;
   border: 2px solid gray;
-  margin-top:-2px;
   position:absolute;
   border-radius:60px;
   font-weight:bold;

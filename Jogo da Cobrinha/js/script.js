@@ -132,7 +132,7 @@ function setFood() {
  
 function jogar() {
  document.getElementById("mutarMusica").style.marginTop = "20px";
- document.getElementById("setas").style.display = "inline";
+ document.getElementById("setas").style.display = "inline-block";
  document.getElementById("snake").style.display = "none";
  document.getElementById("modo").style.display = "none";
  document.getElementById("sair").style.visibility = "visible";
