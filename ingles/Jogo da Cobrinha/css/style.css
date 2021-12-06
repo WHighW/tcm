@@ -118,20 +118,21 @@ canvas {
 }
 	
 #mutarMusica{
-    margin-left:10px;
-    border: 2px solid gray;
-    margin-top:-120px;
-    position:absolute;
-    border-radius:60px;
-    font-weight:bold;
-    cursor:pointer;
-    font-family: Consolas;
-    font-size:17px;
-    width: 50px;
-    height: 50px;
-    background-color: rgb(177, 177, 177);
-    transition:all 0.3s;
+  margin:5px;
+  top: 0px;
+  left: 0px;
+  border: 2px solid gray;
+  position:absolute;
+  border-radius:60px;
+  font-weight:bold;
+  cursor:pointer;
+  font-family: Consolas;
+  font-size:17px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(177, 177, 177);
+  transition:all 0.3s;
 }
 #mutarMusica:hover{
-    background-color:rgb(255, 253, 253);
+  background-color:rgb(255, 253, 253);
 }

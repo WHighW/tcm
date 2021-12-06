@@ -24,10 +24,6 @@ body{
   box-shadow: 0px 5px 0px black;
 }
 
-#jogar input:hover{
-	background-color: ;
-^}
-
 #voltar input{
   display:block;
   z-index:2;
@@ -47,10 +43,6 @@ body{
   box-shadow: 0px 5px 0px black;
 }
 
-#voltar input:hover{
-	
-}
-
 #titulo{
     font-size:30px;
     visibility: hidden;
@@ -67,9 +59,10 @@ body{
 }
 
 #mutarMusica{
-  margin-left:-830px;
+  margin:5px;
+  top: 0px;
+  left: 0px;
   border: 2px solid gray;
-  margin-top:-2px;
   position:absolute;
   border-radius:60px;
   font-weight:bold;
