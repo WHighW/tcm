@@ -52,13 +52,13 @@
     <!-- Sliders -->
     <section id="home">
         <div id="slider">
-            <ul id="slideWrap"> 
-                <li><img src="../img/banner_cobra_ingles.png" alt=""></li>
-                <li><img src="img/imagem2.png" alt=""></li>
-                <li><img src="img/imagem3.png" alt=""></li>
+            <ul id="slideWrap">
+                <li><img class="slide" src="../img/render.gif" alt=""></li>
+                <li><img class= "slide" src="../img/banner_cobra_portugues.png" alt=""></li>
+                <li><img class="slide" src="../img/imagem3.png" alt=""></li>
             </ul>
-            <a id="ant" href="#">&#8810;</a>
-            <a id="prox" href="#">&#8811;</a>
+            <button id="ant" onclick="plusDivs(-1);">&#8810;</button>
+            <button id="prox" onclick="plusDivs(+1)">&#8811;</button>
         </div>
     </section>
 
@@ -154,6 +154,6 @@
     </footer>
 
     <!-- Link dos arquivos javascript -->
-	<script type="text/javascript" src="./js/slide.js"></script>
+	<script type="text/javascript" src="../js/slide.js"></script>
 </body>
 </html>
