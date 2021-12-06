@@ -377,7 +377,7 @@ body {
 }
 
 /* Jogo do Space invaders */
-.joguinhos2 #velha {
+.joguinhos2 #spacinvaders {
   width: 220px;
   height: 355px;
   float: left;
@@ -385,25 +385,24 @@ body {
   transition: all 0.3s;
 }
 
-.joguinhos2 #tituvelha {
+.joguinhos2 #tituspacinv {
   text-align: center;
   color: rgb(255, 255, 255);
   padding-top: 20px;
   font-size: 23px;
 }
-.joguinhos2 #descvelha {
+.joguinhos2 #descspacinv {
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 14px;
   padding-top: 6px;
 }
-.joguinhos2 #velha:hover {
+.joguinhos2 #spacinvaders:hover {
   padding: 50px;
 }
 
 /* Jogo do Breakout */
-
-.joguinhos2 #cobra {
+.joguinhos2 #breakout {
   text-align: center;
   width: 220px;
   height: 355px;
@@ -413,26 +412,25 @@ body {
   margin-left: 50px;
   transition: all 0.3s;
 }
-.joguinhos2 #titucobra {
+.joguinhos2 #titubreakout {
   text-align: center;
   color: rgb(255, 255, 255);
   padding-top: 20px;
   font-size: 23px;
 }
-.joguinhos2 #desccobra {
+.joguinhos2 #descbreakout {
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 14px;
   padding-top: 6px;
   width: 210px;
 }
-.joguinhos2 #cobra:hover {
+.joguinhos2 #breakout:hover {
   padding: 50px;
 }
 
 /* Geometric Dash */
-
-.joguinhos2 #magica {
+.joguinhos2 #geometjump {
   text-align: center;
   width: 220px;
   height: 355px;
@@ -442,20 +440,20 @@ body {
   margin-left: 50px;
   transition: all 0.3s;
 }
-.joguinhos2 #titumagica {
+.joguinhos2 #titugeometjump {
   text-align: center;
   color: rgb(255, 255, 255);
   padding-top: 20px;
   font-size: 23px;
 }
-.joguinhos2 #descmagica {
+.joguinhos2 #descgeometjump {
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 14px;
   padding-top: 6px;
   width: 210px;
 }
-.joguinhos2 #magica:hover {
+.joguinhos2 #geometjump:hover {
   padding: 50px;
 }
 

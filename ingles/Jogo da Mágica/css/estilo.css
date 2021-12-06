@@ -63,22 +63,3 @@ td {
   font-weight: bold; 
   cursor: pointer
 }
-
-#mutarMusica{
-  margin-left:10px;
-  border: 2px solid gray;
-  margin-top:-2px;
-  position:absolute;
-  border-radius:60px;
-  font-weight:bold;
-  cursor:pointer;
-  font-family: Consolas;
-  font-size:17px;
-  width: 50px;
-  height: 50px;
-  background-color: rgb(177, 177, 177);
-  transition:all 0.3s;
-}
-#mutarMusica:hover{
-  background-color:rgb(255, 253, 253);
-}

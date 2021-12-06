@@ -9,7 +9,8 @@
     <body>
 		<button id="mutarMusica" onclick="mutarMusica()">&#9616;&nbsp;&#9612</button>	
 		<div id="jogar"><input type="button" value="JOGAR" onclick="start()"></div>
-		<div id="voltar"><input type="button" value="VOLTAR" onclick="history.back()"></div>
+		<div id="voltar"><input type="button" value="REINICIAR" onclick="window.location.reload()"></div>
+		<div id="sair"><input type="button" value="VOLTAR" onclick="history.back()"></div>
 		<div id="titulo">
 			<tt>Breakout</tt>
 		</div>
@@ -138,7 +139,8 @@
 		 
 		//velocidade da bola
 		function start(){
-		document.getElementById('voltar').style.top = "90%";
+		document.getElementById('voltar').style.display = "block";
+		document.getElementById('sair').style.display = "none";
 		document.getElementById('jogar').style.visibility = "hidden";
 		document.getElementById('titulo').style.visibility = "visible";
 		document.getElementById('gameCanvas').style.visibility = "visible"; 

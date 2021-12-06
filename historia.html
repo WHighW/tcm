@@ -46,6 +46,8 @@
             </ul>
           </nav>
         </section>
+      </main>
+
         <form class="pesquisa">
           <input
             placeholder="O que pretende jogar?"
@@ -57,27 +59,48 @@
         </form>
       </div>
 
-      <section class="historia">
-        <div id="tituhis">
-          <p>Nossa História</p>
+    <section class="historia">
+      <div id="tituhis">
+        <p>Nossa História</p>
+      </div>
+      <div id="txthistoria">
+        <p>
+          Este site é o resultado de pura motivação e trabalho duro com o
+          objetivo de criar um site de jogos que se destaca dos demais, onde
+          qualquer um possa se divertir sem precisar se preocupar com
+          downloads demorados que demandam muito tempo, é só clicar e jogar!
+          Com nossa equipe composta por estudantes da famosa BG nos esforçamos
+          para trazer variedade ao nosso público, criamos nossos jogos a
+          partir de inspiração nos clássicos e jogos que te farão se perguntar
+          "como isso é possível?!" nossa equipe é formada pelos estudantes:
+          Iago , Murillo, Ranier , Lucas Wey e Gabriel, nos somo a Broken
+          Control, Divirta-se!
+        </p>
+      </div>
+    </section>
+    
+  <section class="autores">
+    <div id="tituautores">
+      <p>Nossa Equipe</p>
+    </div>
+
+    <div class="imagensautores">
+      <div id="imgautores">
+        <img src="../img/gabriel.jpg" width="400px" height="500px" style="margin-right:50px; margin-left:50px;"/>
+        <img src="../img/lucas.jpg" width="400px" height="500px" style="margin-right:50px; margin-left:50px;"/>
+        <img src="../img/murillo.jpg" width="400px" height="500px" style="margin-right:50px; margin-left:50px;"/>
+      </div>
+    </div>
+
+    <div class="imagensautores2">
+        <div id="imgautores2">
+          <img src="../img/ratue.jpg" width="400px" height="500px" style="margin-right:50px; margin-left:50px;"/>
+          <img src="../img/montanha.png" width="400px" height="500px" style="margin-right:50px; margin-left:50px;"/>
         </div>
-        <div id="txthistoria">
-          <p>
-            Este site é o resultado de pura motivação e trabalho duro com o
-            objetivo de criar um site de jogos que se destaca dos demais, onde
-            qualquer um possa se divertir sem precisar se preocupar com
-            downloads demorados que demandam muito tempo, é só clicar e jogar!
-            Com nossa equipe composta por estudantes da famosa BG nos esforçamos
-            para trazer variedade ao nosso público, criamos nossos jogos a
-            partir de inspiração nos clássicos e jogos que te farão se perguntar
-            "como isso é possível?!" nossa equipe é formada pelos estudantes:
-            Iago , Murillo, Ranier , Lucas Wey e Gabriel, nos somo a Broken
-            Control, Divirta-se!
-          </p>
-        </div>
-      </section>
-    </main>
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+  </section>
+    
+
     <footer>
       <div class="footer">
         <div class="redesociais">
@@ -130,5 +153,41 @@
         <p>&copy;2021 All rights reserved.</p>
       </div>
     </footer>
+
+<script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script>
+  function showImages(el) {
+  var windowHeight = jQuery( window ).height();
+  $(el).each(function(){
+      var thisPos = $(this).offset().top;
+
+      var topOfWindow = $(window).scrollTop();
+      if (topOfWindow + windowHeight - 200 > thisPos ) {
+          $(this).addClass("fadeIn");
+      }
+    });
+  }
+
+  // if the image in the window of browser when the page is loaded, show that image
+    $(document).ready(function(){
+      showImages('.imagensautores');
+  });
+
+    // if the image in the window of browser when scrolling the page, show that image
+  $(window).scroll(function() {
+    showImages('.imagensautores');
+  });
+
+  // if the image in the window of browser when the page is loaded, show that image
+  $(document).ready(function(){
+      showImages('.imagensautores2');
+  });
+
+    // if the image in the window of browser when scrolling the page, show that image
+  $(window).scroll(function() {
+    showImages('.imagensautores2');
+  });
+</script>
+    
   </body>
 </html>
