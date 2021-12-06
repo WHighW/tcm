@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Jogo da Cobrinha</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" type="imagex/png" href="../img/pngegg (1).png">
+</head>
+
+<body>
+
+	<button id="mutarMusica" onclick="mutarMusica()">&#9616;&nbsp;&#9612</button>
+		<div class="titulo">
+			<p id="snake">Snake Game</p>
+			<p id="modo">Click on the bottom to start the game!</p>
+		</div>
+		
+		<div id="setas">
+			<img src="./img/arrow.png" width="400" height="322">
+			<p>Controls of the Snake</p>
+		</div>
+		
+		<center>
+			<div class="botoes">
+				<div id="normal"><input type="button" value="PLAY" onclick="jogar()"></a></div>
+				<div id="voltar"><input type="button" onclick="history.back()" value="RETURN" id="voltar"></div>
+				<div id="sair"><a href="index.html"><input type="button" value="&lArr;" style="text-align: center;"></a></div>
+				<div id="reiniciar"><input type="button" value="RESET" onclick="init()">
+			</div>
+		</center>
+	<div id="principal"></div>
+    <div id="pontuacao"></div>
+	
+	<div id="message"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

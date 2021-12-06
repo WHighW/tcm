@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">    
+	<head>
+		<meta charset="utf-8">
+		<title>Breakout</title>	
+		<link rel="shortcut icon" type="imagex/png" href="../img/pngegg (1).png">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+    <body>
+		<button id="mutarMusica" onclick="mutarMusica()">&#9616;&nbsp;&#9612</button>	
+		<div id="jogar"><input type="button" value="PLAY" onclick="start()"></div>
+		<div id="voltar"><input type="button" value="RETURN" onclick="history.back()"></div>
+		<div id="titulo">
+			<tt>Breakout</tt>
+		</div>
+		<canvas id="gameCanvas" height="600px" width="800px"></canvas> 
+<script type="text/javascript">
+		//Variavel Canva
+		var canvas = document.getElementById("gameCanvas");
+		var ctx = canvas.getContext("2d");
+		//Variavel Bola
+		var ballR = 10, x = canvas.width / 2, y = canvas.height - 30,
+			dx = 3, dy = -3, pongH = 15, pongW = 80, pongX = (canvas.width - pongW) / 2,
+			rightKey = false, leftKey = false, brickRows = 3, brickCol = 9,
+			brickW = 75, brickH = 20, brickPadding = 10, brickOffsetTop = 30,
+			brickOffsetLeft = 30;
+		//Variavel Blocos
+		var bricks = [];
+		
+		//Localização dos Blocos
+		for (c = 0; c < brickCol; c++) {
+			for (r = 0; r < brickRows; r++) {
+				bricks.push({
+				x : (c * (brickW + brickPadding)) + brickOffsetLeft,
+				y : (r * (brickH + brickPadding)) + brickOffsetTop,
+				status : 1});
+			}
+		}
+		
+		//Desing da Bola
+		function drawBall() {
+			ctx.beginPath();
+			ctx.arc(x, y, ballR, 0, Math.PI * 2);
+			ctx.fillStyle = "#361b80";
+			ctx.fill();
+			ctx.closePath();
+		}
+		 
+		//Bola Quicar
+		function drawPong() {
+			ctx.beginPath();
+			ctx.rect(pongX, canvas.height - pongH, pongW, pongH);
+			ctx.fillStyle = "#361b80";
+			ctx.fill();
+			ctx.closePath();
+		}
+		 
+		//Desing dos Blocos
+		function drawBricks() {
+			bricks.forEach(function(brick) {
+				if (!brick.status) return; 
+				ctx.beginPath();
+				ctx.rect(brick.x, brick.y, brickW, brickH);
+				ctx.fillStyle = "#0390fc";
+				ctx.fill();
+				ctx.closePath();
+			});
+		}
+		//Colisão
+		function collisionDetection() {
+			bricks.forEach(function(b) {
+				if (!b.status) return;			 
+				var inBricksColumn = x > b.x  &&  x < b.x + brickW,
+					inBricksRow = y > b.y  &&  y < b.y + brickH;		 
+					if (inBricksColumn && inBricksRow) {
+					dy = -dy;
+					b.status = 0;
+				}
+			});
+		}
+		//Começando o jogo
+		function draw() {
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
+			drawBricks();
+			drawBall();
+			drawPong();
+			collisionDetection();
+		   
+			//Bater na Parede
+			if (hitSideWall())
+				dx = -dx;
+			 
+			//Bater mo Teto
+			if (hitTop()  ||  hitPong())
+				dy = -dy;
+		  
+			//Recomeçar o Jogo
+			if (gameOver())
+				document.location.reload();
+			 
+			//Variavel de Locomoção
+			var RIGHT_ARROW = 39, LEFT_ARROW = 37;
+		   
+			//Função de Locomoção
+			function hitPong() { return hitBottom() && ballOverPong(); }
+			function ballOverPong() { return x > pongX  &&  x < pongX + pongW; }
+			function hitBottom() { return y + dy > canvas.height - ballR; }
+			function gameOver() { return hitBottom() && !ballOverPong(); }
+			function hitSideWall() { return x + dx > canvas.width - ballR || x + dx < ballR; }
+			function hitTop() { return y + dy < ballR; }
+			function xOutOfBounds() { return x + dx > canvas.width - ballR ||  x + dx < ballR; }
+			function rightPressed(e) { return e.keyCode == RIGHT_ARROW; }
+			function leftPressed(e) { return e.keyCode == LEFT_ARROW; }
+			function keyDown(e) {
+			rightKey = rightPressed(e);
+			leftKey = leftPressed(e);
+			}
+		   
+			//Nada acontece quando usa seta para cima
+			function keyUp(e) {
+				rightKey = rightPressed(e) ? false : rightKey;
+				leftKey = leftPressed(e) ? false : leftKey;
+			}
+		   
+			document.addEventListener("keydown", keyDown, false);
+			document.addEventListener("keyup", keyUp, false);
+		   
+		   //Velocidade da Barra
+			var maxX = canvas.width - pongW, minX = 0, pongDelta = rightKey ? 7 : leftKey ? -7 : 0;
+		   
+			pongX = pongX + pongDelta;
+			pongX = Math.min(pongX, maxX);
+			pongX = Math.max(pongX, minX);
+		   
+			x += dx;
+			y += dy;
+		}
+		 
+		//velocidade da bola
+		function start(){
+		document.getElementById('voltar').style.top = "90%";
+		document.getElementById('jogar').style.visibility = "hidden";
+		document.getElementById('titulo').style.visibility = "visible";
+		document.getElementById('gameCanvas').style.visibility = "visible"; 
+		setInterval(draw, 10);
+		}
+		
+		// Música
+		var audio = new Audio('sounds/musica.mp3');
+		audio.play()
+		audio.volume = 0.10;
+
+		function mutarMusica(){
+			if(audio.muted == true) {
+			audio.muted = false;
+		}
+		else if(audio.muted == false) {
+			audio.muted = true;
+		}
+
+		var btn = document.getElementById('mutarMusica');
+			if (btn.value == "&#9654") {
+			btn.value = "&#9616;&nbsp;&#9612;";
+			btn.innerHTML = "&#9616;&nbsp;&#9612;";
+		}
+		else{
+			btn.value = "&#9654";
+			btn.innerHTML = "&#9654";
+		}
+	}
+</script>		
+		
+	</body>
+</html> 

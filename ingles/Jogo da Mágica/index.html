@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Jogo da Mágica</title>
+	  <meta charset="UTF-8"/>
+	  <meta name="viewport" content="width=device-width, intital-scale=1.0"/>
+	  <meta name="description Autor:Cidade Data: 29/10/2021 titulo:mágica wellcity"/>
+    <link rel="styleSheet" type="text/css" href="css/estilo.css"/>
+    <link rel="shorcut icon" href="../img/pngegg (1).png">
+  </head>
+  
+  <body>
+		<button id="mutarMusica" onclick="mutarMusica()">&#9616;&nbsp;&#9612</button>
+    <div id="principal">
+      <span id="cu1" style="font-size: 27px">THINK ABAOUT A NUMBER BETWEEN 1 and 63</span><br/><br/>
+      <span id="cu2" style="font-size: 16px">AS I AM MAGIC I WILL GUESS...</span>
+      <br /><br /><br /><button style="font-size: 50px; cursor: pointer; font-weight: bold; color:rgb(255, 255, 255);background-color:#000000;margin-top:130px; margin-right: 20px;" onclick="GerarPainel()" onmouseover="style.color='#FF0000'" onmouseout="style.color='rgb(255, 255, 255)'">OK</button>  
+      <input onclick="history.back()" style="font-size: 50px; cursor: pointer; font-weight: bold; color:rgb(255, 255, 255); background-color:#000000;"  type="button" value="Return" id="voltar" onmouseover="style.color='#FF0000'" onmouseout="style.color='rgb(255, 255, 255)'">
+    </div>
+
+    <div id="painel">
+      <span style="font-weight: bold; font-size: 24px">Click on the blocks where the number appears:</span><br /><br />
+      <!-- primeiro -->
+      <table cellspacing="0" onclick="style.color = (style.color == '') ? '#CC0000' : ''">
+        <tr>
+          <td>1</td>
+          <td>3</td>
+          <td>5</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>11</td>
+          <td>13</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>19</td>
+          <td>21</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>27</td>
+          <td>29</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <td>33</td>
+          <td>35</td>
+          <td>37</td>
+          <td>39</td>
+        </tr>
+        <tr>
+          <td>41</td>
+          <td>43</td>
+          <td>45</td>
+          <td>47</td>
+        </tr>
+        <tr>
+          <td>49</td>
+          <td>51</td>
+          <td>53</td>
+          <td>55</td>
+        </tr>
+        <tr>
+          <td>57</td>
+          <td>59</td>
+          <td>61</td>
+          <td>63</td>
+        </tr>
+      </table>
+      
+      <!-- segundo -->
+      <table cellspacing="0" onclick="style.color = (style.color == '') ? '#CC0000' : ''">
+        <tr>
+          <td>2</td>
+          <td>3</td>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>11</td>
+          <td>14</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>19</td>
+          <td>22</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td>27</td>
+          <td>30</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <td>34</td>
+          <td>35</td>
+          <td>38</td>
+          <td>39</td>
+        </tr>
+        <tr>
+          <td>42</td>
+          <td>43</td>
+          <td>46</td> 
+          <td>47</td>
+        </tr>
+        <tr>
+          <td>50</td>
+          <td>51</td>
+          <td>54</td>
+          <td>55</td>
+        </tr>
+        <tr>
+          <td>58</td>
+          <td>59</td>
+          <td>62</td>
+          <td>63</td>
+        </tr>
+      </table>
+
+      <!-- terceiro -->
+      <table cellspacing="0" onclick="style.color = (style.color == '') ? '#CC0000' : ''">
+        <tr>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <td>36</td>
+          <td>37</td>
+          <td>38</td>
+          <td>39</td>
+        </tr>
+        <tr>
+          <td>44</td>
+          <td>45</td>
+          <td>46</td>
+          <td>47</td>
+        </tr>
+        <tr>
+          <td>52</td>
+          <td>53</td>
+          <td>54</td>
+          <td>55</td>
+        </tr>
+        <tr>
+          <td>60</td>
+          <td>61</td>
+          <td>62</td>
+          <td>63</td>
+        </tr>
+      </table><br /><br />
+      
+      <!-- quarto -->
+      <table cellspacing="0" onclick="style.color = (style.color == '') ? '#CC0000' : ''">
+        <tr>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+          <td>27</td>
+        </tr>
+        <tr>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <td>40</td>
+          <td>41</td>
+          <td>42</td>
+          <td>43</td>
+        </tr>
+        <tr>
+          <td>44</td>
+          <td>45</td>
+          <td>46</td>
+          <td>47</td>
+        </tr>
+        <tr>
+          <td>56</td>
+          <td>57</td>
+          <td>58</td>
+          <td>59</td>
+        </tr>
+        <tr>
+          <td>60</td>
+          <td>61</td>
+          <td>62</td>
+          <td>63</td>
+        </tr>
+      </table>
+        
+      <!-- quinto -->
+      <table cellspacing="0" onclick="style.color = (style.color == '') ? '#CC0000' : ''">
+        <tr>
+          <td>16</td>
+          <td>17</td>
+          <td>18</td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+          <td>27</td>
+        </tr>
+        <tr>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <td>48</td>
+          <td>49</td>
+          <td>50</td>
+          <td>51</td>
+        </tr>
+        <tr>
+          <td>52</td>
+          <td>53</td>
+          <td>54</td>
+          <td>55</td>
+        </tr>
+        <tr>
+          <td>56</td>
+          <td>57</td>
+          <td>58</td>
+          <td>59</td>
+        </tr>
+        <tr>
+          <td>60</td>
+          <td>61</td>
+          <td>62</td>
+          <td>63</td>
+        </tr>
+      </table>
+      
+      <!-- sexto -->
+      <table cellspacing="0" onclick="style.color = (style.color == '') ? '#CC0000' : ''">
+        <tr>
+          <td>32</td>
+          <td>33</td>
+          <td>34</td>
+          <td>35</td>
+        </tr>
+        <tr>
+          <td>36</td>
+          <td>37</td>
+          <td>38</td>
+          <td>39</td>
+        </tr>
+        <tr>
+          <td>40</td>
+          <td>41</td>
+          <td>42</td>
+          <td>43</td>
+        </tr>
+        <tr>
+          <td>44</td>
+          <td>45</td>
+          <td>46</td>
+          <td>47</td>
+        </tr>
+        <tr>
+          <td>48</td>
+          <td>49</td>
+          <td>50</td>
+          <td>51</td>
+        </tr>
+        <tr>
+          <td>52</td>
+          <td>53</td>
+          <td>54</td>
+          <td>55</td>
+        </tr>
+        <tr>
+         <td>56</td>
+          <td>57</td>
+          <td>58</td>
+          <td>59</td>
+        </tr>
+        <tr>
+          <td>60</td>
+          <td>61</td>
+          <td>62</td>
+          <td>63</td>
+        </tr>
+      </table><br /><br />
+        
+      <center>
+        <button style="font-size: 30px; font-weight: bold; cursor: pointer; margin-bottom: 12px; color:rgb(255, 255, 255);background-color:#000000;" onmouseover="style.color='#FF0000'" onmouseout="style.color='rgb(255, 255, 255)'" onclick="Resultado()">OK</button>
+      </center>
+      <input onclick="history.back()" type="button" style="font-size: 30px; font-weight: bold; cursor: pointer;color:rgb(255, 255, 255);background-color:#000000;" value="Return" id="voltar2" onmouseover="style.color='#FF0000'" onmouseout="style.color='rgb(255, 255, 255)'">
+    </div>
+	
+	
+	<script type="text/javascript">
+      function GerarPainel() {
+        document.getElementById("principal").innerHTML = document.getElementById("painel").innerHTML
+      }
+      
+      function Resultado() {
+        numero = 0;
+        for (i = 0; i < 7; i++) with (document.getElementsByTagName("table")[i]) {
+          if (style.color != "") numero += Math.pow(2, i);   
+        }
+        if (numero == 0) {
+          alert("Selecione pelo menos uma carta");
+          GerarPainel();
+        }
+        else with (document.getElementById("principal")) {
+          style.fontSize = "200px";
+          style.color = "#F00";
+          innerHTML = numero;
+        }
+      }
+    // Música
+      var audio = new Audio('sounds/musica.mp3');
+      audio.play()
+
+      function mutarMusica(){
+      if(audio.muted == true) {
+        audio.muted = false;
+      }
+      else if(audio.muted == false) {
+        audio.muted = true;
+      }
+
+      var btn = document.getElementById('mutarMusica');
+        if (btn.value == "&#9654") {
+        btn.value = "&#9616;&nbsp;&#9612;";
+        btn.innerHTML = "&#9616;&nbsp;&#9612;";
+      }
+      else{
+        btn.value = "&#9654";
+        btn.innerHTML = "&#9654";
+      }
+    }
+  </script>
+	
+	
+  </body>
+</html>
