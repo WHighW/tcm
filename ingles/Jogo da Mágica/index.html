@@ -352,36 +352,15 @@
           alert("Selecione pelo menos uma carta");
           GerarPainel();
         }
-        else with (document.getElementById("principal")) {
-          style.fontSize = "200px";
-          style.color = "#F00";
-          innerHTML = numero;
+        else{
+          document.getElementById('principal').style.fontSize = "200px";
+          document.getElementById('principal').style.color = "#F00";
+          document.getElementById('principal').innerHTML = numero;
+          document.getElementById('botao').innerHTML = "<input onclick='window.location.reload()' style='font-size: 50px; cursor: pointer; font-weight: bold; color:rgb(255, 255, 255); background-color:#000000;'  type='button' value='Return' id='voltar3' onmouseover='style.color='#FF0000'' onmouseout='style.color='rgb(255, 255, 255)''></button>";
         }
       }
-    // Música
-      var audio = new Audio('sounds/musica.mp3');
-      audio.play()
-
-      function mutarMusica(){
-      if(audio.muted == true) {
-        audio.muted = false;
-      }
-      else if(audio.muted == false) {
-        audio.muted = true;
-      }
-
-      var btn = document.getElementById('mutarMusica');
-        if (btn.value == "&#9654") {
-        btn.value = "&#9616;&nbsp;&#9612;";
-        btn.innerHTML = "&#9616;&nbsp;&#9612;";
-      }
-      else{
-        btn.value = "&#9654";
-        btn.innerHTML = "&#9654";
-      }
-    }
   </script>
-	
+	<div id="botao"></div>
 	
   </body>
 </html>

@@ -29,6 +29,7 @@ var game = new Game();
 function start() {
 	if(game.init())
 		game.start();
+	document.getElementById('background').style.outline = "3px solid orange";
 	document.getElementById('voltar').style.display = "none";
 	document.getElementById('voltar2').style.display = 'block';
 	document.getElementById('reiniciar').style.visibility = "visible";
@@ -613,7 +614,7 @@ function Enemy() {
 		this.speedY = speed;
 		this.alive = true;
 		this.leftEdge = this.x - 90;
-		this.rightEdge = this.x + 220;
+		this.rightEdge = this.x + 165;
 		this.bottomEdge = this.y + 150;
 	};
 

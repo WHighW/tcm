@@ -61,5 +61,10 @@ td {
 #voltar2{
   font-size: 15px;
   font-weight: bold; 
-  cursor: pointer
+  cursor: pointer;
+}
+
+#botao{
+  justify-content: center;
+  display:flex;
 }
