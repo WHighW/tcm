@@ -129,6 +129,9 @@ canvas{
   border-radius: 70px;
   box-shadow: 0px 5px 0px black;
 }
+#reiniciar input:hover{
+  background-color:#520480;
+}
 
 #voltar input{
   display:block;
@@ -148,6 +151,9 @@ canvas{
   border-radius: 70px;
   box-shadow: 0px 5px 0px black;
 }
+#voltar input:hover{
+  background-color:#520480;
+}
 
 #voltar2 input{
   display:none;
@@ -166,4 +172,7 @@ canvas{
   background-color:purple;
   border-radius: 70px;
   box-shadow: 0px 5px 0px black;
+}
+#voltar2 input:hover{
+  background-color:#520480;
 }

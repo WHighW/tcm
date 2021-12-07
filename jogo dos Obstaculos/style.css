@@ -10,13 +10,27 @@ canvas {
     margin: auto;
 }
 
-#voltar{
+#voltar input{
   z-index:2;
   margin: 0;
   position: absolute;
   top: 90%;
   left: 50%;
-  
+  z-index:2;
+  margin: 0;
+  transform: translate(-50%, -50%);
+	cursor:pointer;
+	width:10vw;
+	height: 4vw;
+	font-size:28px;
+	color:rgb(255, 255, 255);
+  font-weight: bold;
+  background-color:purple;
+  border-radius: 70px;
+  box-shadow: 0px 5px 0px black;
+}
+#voltar input:hover{
+  background-color: blue;
 }
 
 #mutarMusica{

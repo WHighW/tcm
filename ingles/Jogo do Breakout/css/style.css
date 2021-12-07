@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "break";
+  src: url("upheavtt.ttf");
+}
+
 body{
     background: #36496b;
     color: #fff;
@@ -7,23 +12,26 @@ body{
 }
 
 #jogar input{
-	z-index:2;
+  z-index:2;
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-	cursor:pointer;
-	width:8vw;
-	height: 4vw;
-	font-size:28px;
-	color:rgb(255, 255, 255);
+  cursor:pointer;
+  width:8vw;
+  height: 4vw;
+  font-size:28px;
+  color:rgb(255, 255, 255);
   font-weight: bold;
-  background-color:purple;
+  background-color:rgb(0, 42, 121);
   border-radius: 70px;
   box-shadow: 0px 5px 0px black;
 }
-
+#jogar input:hover{
+    background-color: blue;
+}
+  
 #sair input{
   display:block;
   z-index:2;
@@ -32,21 +40,24 @@ body{
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-	cursor:pointer;
-	width:8vw;
-	height: 4vw;
-	font-size:28px;
-	color:rgb(255, 255, 255);
+  cursor:pointer;
+  width:8vw;
+  height: 4vw;
+  font-size:28px;
+  color:rgb(255, 255, 255);
   font-weight: bold;
-  background-color:purple;
+  background-color:rgb(0, 42, 121);
   border-radius: 70px;
   box-shadow: 0px 5px 0px black;
 }
-
+#sair input:hover{
+  background-color: blue;
+}
+  
 #voltar{
   display: none;
 }
-
+  
 #voltar input{
   z-index:2;
   margin: 0;
@@ -54,21 +65,24 @@ body{
   top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
-	cursor:pointer;
-	width:8vw;
-	height: 4vw;
-	font-size:28px;
-	color:rgb(255, 255, 255);
+  cursor:pointer;
+  width:10vw;
+  height: 4vw;
+  font-size:28px;
+  color:rgb(255, 255, 255);
   font-weight: bold;
-  background-color:purple;
+  background-color:rgb(0, 42, 121);
   border-radius: 70px;
   box-shadow: 0px 5px 0px black;
 }
+#voltar input:hover{
+    background-color: blue;
+}
 
 
-#titulo{
-    font-size:30px;
-    visibility: hidden;
+#titulo tt{
+    font-size:90px;
+    font-family: break;
 }
 
 #gameCanvas {
