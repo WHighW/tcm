@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: "fonte1";
-  src: url("Matrix\ Zone.ttf");
+  src: url("../css/Matrix\ Zone.ttf");
 }
 
 @font-face {
   font-family: "fonte2";
-  src: url("GAME_glm.ttf");
+  src: url("../css/GAME_glm.ttf");
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -34,7 +34,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background: linear-gradient(0deg, yellow, transparent 70%);
+  background: rgb(255, 255, 255);
 }
 
 /* Tratamento do título */
@@ -786,6 +786,7 @@ footer {
 
 #imgnotc1 {
 text-align: center;
+margin-top: 25px;
 }
 
 #titlenotc1 {
@@ -809,7 +810,7 @@ text-align: center;
   padding-left: 15px;
   margin-left: 300px;
   margin-right: 300px;
-  background: linear-gradient(0deg, black, transparent 70%);
+  background: linear-gradient(0deg, orange, transparent 70%);;
 
 }
 
@@ -824,3 +825,7 @@ text-align: center;
   padding-right: 15px;
 }
 
+#img2notc1{
+    text-align: center;
+    padding: 25px;
+}
