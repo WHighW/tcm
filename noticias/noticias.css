@@ -542,10 +542,10 @@ margin-top: 25px;
 
 #container{
   padding-right: 15px;
+  display:grid;
   padding-left: 15px;
   margin-left: 300px;
   margin-right: 300px;
-  margin-bottom:50px;
   background: linear-gradient(0deg, orange, transparent 70%);;
 }
 
@@ -554,8 +554,9 @@ margin-top: 25px;
   margin-right: 250px;
   font-family: Arial;
   text-align: justify;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: normal;
+
   padding-left: 15px;
   padding-right: 15px;
 }
