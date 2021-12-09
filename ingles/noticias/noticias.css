@@ -267,6 +267,13 @@ footer {
 }
 
 /* Endereço no rodapé */
+.endereco a{
+  color:white;
+  text-decoration:none;
+}
+.endereco a:hover{
+  color: #898989;
+}
 .endereco {
   margin-left: 40px;
   margin-right: 135px;
@@ -274,7 +281,6 @@ footer {
   padding-top: 2px;
 }
 #contendereco {
-  color: rgb(255, 255, 255);
   padding-left: 0;
   margin-top: 0px;
   margin-bottom: 10px;

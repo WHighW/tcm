@@ -532,6 +532,14 @@ footer {
 }
 
 /* Endereço no rodapé */
+.endereco a{
+  color:white;
+  text-decoration:none;
+}
+.endereco a:hover{
+  color: #898989;
+}
+
 .endereco {
   margin-left: 40px;
   margin-right: 135px;
@@ -539,7 +547,6 @@ footer {
   padding-top: 2px;
 }
 #contendereco {
-  color: rgb(255, 255, 255);
   padding-left: 0;
   margin-top: 0px;
   margin-bottom: 10px;
@@ -758,4 +765,31 @@ footer {
   font-size: 14px;
   padding-top: 6px;
   text-align: center;
+}
+
+.mapa-container{
+  margin:100px;
+  display:flex;
+  justify-content:center;
+}
+#mapa iframe{
+  border: 5px solid purple;
+}
+.mapa-container h1{
+  text-align:center;
+  color:purple;
+  font-size:50px;
+  margin-bottom:20px;
+  font-family: verdana;
+}
+.mapa-container h3{
+  margin-top:10px;
+  text-align:center;
+  color:purple;
+  font-size:40px;
+  margin-bottom:20px;
+  font-family: verdana;
+}
+.mapa-container3 a{
+  text-decoration:none;
 }
