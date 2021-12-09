@@ -600,7 +600,7 @@ footer {
   text-decoration: none;
 }
 .noticiastxt a:hover{
-  text-decoration: underline;
+  text-decoration: underline purple;
 }
 
 .noticiastxt{
@@ -686,7 +686,7 @@ footer {
 
 /* Notícia 4*/
 .noticiastxt2 a:hover{
-  text-decoration: underline;
+  text-decoration: underline purple;
 }
 .noticiastxt2 a{
   text-decoration: none;
