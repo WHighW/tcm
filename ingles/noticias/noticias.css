@@ -278,15 +278,6 @@ footer {
   padding-left: 0;
   margin-top: 0px;
   margin-bottom: 10px;
-  
-}
-
-#contendereco a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-#contendereco a:hover{
-  color: #898989;
 }
 
 /* Contato do rodapé */
