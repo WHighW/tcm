@@ -333,6 +333,21 @@ footer {
   text-align: center;
 }
 
+/*Notícia It Takes*/
+.noticiastxt #noticiaf{
+
+}
+
+/*Notícia Esports*/
+.noticiastxt #noticias{
+
+}
+
+/*Notícia dos ganhadores*/
+.noticiastxt #noticiat{
+
+}
+
 /* Notícia 1 */
 
 .noticiastxt {
@@ -605,4 +620,8 @@ margin-top: 25px;
   text-align: center;
   padding: 15px;
   padding-bottom: 75px;
+}
+
+.twitter-tweet{
+  text-align: center;
 }
