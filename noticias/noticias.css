@@ -546,6 +546,7 @@ margin-top: 25px;
 }
 
 #container{
+  margin-bottom:50px;
   padding-right: 15px;
   display:grid;
   padding-left: 15px;
@@ -574,6 +575,19 @@ margin-top: 25px;
   text-align: justify;
   font-size: 9px;
   font-weight: normal;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 35px;
+  padding-bottom: 55px;
+}
+
+#row3{
+  margin-left: 250px;
+  margin-right: 250px;
+  font-family: Arial;
+  text-align: justify;
+  font-weight: bold;
 
   padding-left: 15px;
   padding-right: 15px;
