@@ -604,13 +604,14 @@ footer {
   text-decoration: none;
 }
 .noticiastxt a:hover{
-  text-decoration: underline purple;
+  text-decoration: underline rgb(255, 255, 255);
 }
 
 .noticiastxt{
   justify-content: center;
   display: flex;
   margin-bottom: 350px;
+  align-items: center;
 }
 
 .noticiastxt #noticia1 {
@@ -640,7 +641,7 @@ footer {
   width: 100%;
   float: left;
   height: 100px;
-  margin-left: 10px;
+
 }
 
 /* Notícia 2 */
@@ -693,7 +694,7 @@ footer {
 
 /* Notícia 4*/
 .noticiastxt2 a:hover{
-  text-decoration: underline purple;
+  text-decoration: underline rgb(255, 255, 255);
 }
 .noticiastxt2 a{
   text-decoration: none;
@@ -703,6 +704,8 @@ footer {
   display: flex;
   margin-top: -300px;
   margin-bottom: 50px;
+  align-items:center;
+  margin-left: -20px;
 }
 
 .noticiastxt2 #noticia4 {
@@ -770,6 +773,8 @@ footer {
   text-align: center;
 }
 
+/* Mapa */
+
 .mapa-container{
   margin:100px;
   display:flex;
@@ -795,4 +800,93 @@ footer {
 }
 .mapa-container3 a{
   text-decoration:none;
+}
+
+.noticiastxtawards{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+/* Notícia It takes two */
+.noticiastxtawards #noticiaf {
+  width: 500px;
+  height: 350px;
+  float: left;
+  background-color: rgba(0, 0, 0, 0.796);
+  transition: all 0.3s;
+
+}
+
+.noticiastxtawards #titnotf {
+  padding-bottom: 20px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 23px;
+}
+
+.noticiastxtawards #descnotf {
+  font-size: 14px;
+  padding-top: 6px;
+  text-align: center;
+}
+
+.noticiastxtawards a{
+  text-decoration: none;
+  color: white;
+}
+
+/* Notícia Esports */
+.noticiastxtawards #noticias {
+  width: 500px;
+  height: 350px;
+  float: left;
+  background-color: rgba(0, 0, 0, 0.796);
+  transition: all 0.3s;
+
+}
+
+.noticiastxtawards a:hover{
+  text-decoration: underline rgb(255, 255, 255);
+}
+
+.noticiastxtawards #titnots {
+  padding-bottom: 20px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 23px;
+}
+
+.noticiastxtawards #descnots {
+  font-size: 14px;
+  padding-top: 6px;
+  text-align: center;
+}
+
+/* Notícia Game awards */
+.noticiastxtawards #noticiat {
+  width: 500px;
+  height: 350px;
+  float: left;
+  background-color: rgba(0, 0, 0, 0.796);
+  transition: all 0.3s;
+
+}
+
+.noticiastxtawards #titnott {
+  padding-bottom: 20px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 23px;
+}
+
+.noticiastxtawards #descnott {
+  font-size: 14px;
+  padding-top: 6px;
+  text-align: center;
+}
+
+.noticiastxtawards p{
+  color:white;
 }

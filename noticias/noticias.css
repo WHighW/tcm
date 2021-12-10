@@ -333,20 +333,10 @@ footer {
   text-align: center;
 }
 
-/*Notícia It Takes*/
-.noticiastxt #noticiaf{
+/*Notícia It takes*/
 
-}
 
-/*Notícia Esports*/
-.noticiastxt #noticias{
 
-}
-
-/*Notícia dos ganhadores*/
-.noticiastxt #noticiat{
-
-}
 
 /* Notícia 1 */
 
@@ -561,7 +551,6 @@ margin-top: 25px;
 }
 
 #container{
-  margin-bottom:50px;
   padding-right: 15px;
   display:grid;
   padding-left: 15px;
@@ -620,8 +609,18 @@ margin-top: 25px;
   text-align: center;
   padding: 15px;
   padding-bottom: 75px;
+  
 }
 
 .twitter-tweet{
   text-align: center;
+}
+
+.twitter-tweet {
+  margin: auto;
+}
+
+strong{
+  font-weight: bold;
+  color: purple;
 }
