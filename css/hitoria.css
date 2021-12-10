@@ -330,39 +330,43 @@ footer{
 }
 
 /* Endereço no rodapé */
-.endereco{
-    margin-left: 40px;
-    margin-right: 135px;
-    margin-top: 6px;;
-    padding-top: 2px;
+.endereco a{
+  color:white;
+  text-decoration:none;
 }
-#contendereco{
-    color: rgb(255, 255, 255);
-    padding-left: 0;
-    margin-top: 0px;
-    margin-bottom: 10px;
+.endereco a:hover{
+  color: #898989;
+}
+
+.endereco {
+  margin-right: 135px;
+  padding-top: 2px;
+}
+#contendereco {
+  padding-left: 0;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 /* Contato do rodapé */
-#contato{
-    margin-left: 40px;
-    margin-top: 6px;;
-    padding-top: 2px;
+#contato {
+  margin-left: 40px;
 }
 
-#contatonumero{
-    padding-top: 6px;
-    color:rgb(255, 255, 255);
+#contatonumero {
+  margin-bottom:18px;
+  color: rgb(255, 255, 255);
 }
 
-#contatoemail a{
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+#contatoemail a {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
-#contatoemail a:hover{
-    color: #898989;
+#contatoemail a:hover {
+  color: #898989;
 }
 
 .copy p{

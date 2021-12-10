@@ -541,9 +541,7 @@ footer {
 }
 
 .endereco {
-  margin-left: 40px;
   margin-right: 135px;
-  margin-top: 6px;
   padding-top: 2px;
 }
 #contendereco {
@@ -555,16 +553,15 @@ footer {
 /* Contato do rodapé */
 #contato {
   margin-left: 40px;
-  margin-top: 6px;
-  padding-top: 2px;
 }
 
 #contatonumero {
-  padding-top: 6px;
+  margin-bottom:18px;
   color: rgb(255, 255, 255);
 }
 
 #contatoemail a {
+  padding-top: 20px;
   margin-bottom: 10px;
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -627,6 +624,7 @@ footer {
 .noticiastxt #titnot1 {
   text-align: center;
   padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 23px;
 }
 
@@ -659,6 +657,7 @@ footer {
 }
 
 .noticiastxt #titnot2 {
+  padding-bottom: 20px;
   text-align: center;
   padding-top: 20px;
   font-size: 23px;
@@ -680,6 +679,7 @@ footer {
 }
 
 .noticiastxt #titnot3 {
+  padding-bottom: 20px;
   text-align: center;
   padding-top: 20px;
   font-size: 23px;
@@ -714,6 +714,7 @@ footer {
 }
 
 .noticiastxt2 #titnot4 {
+  padding-bottom: 20px;
   text-align: center;
   padding-top: 20px;
   font-size: 23px;
@@ -735,6 +736,7 @@ footer {
 }
 
 .noticiastxt2 #titnot5 {
+  padding-bottom: 20px;
   text-align: center;
   padding-top: 20px;
   font-size: 23px;
@@ -756,6 +758,7 @@ footer {
 }
 
 .noticiastxt2 #titnot6 {
+  padding-bottom: 20px;
   text-align: center;
   padding-top: 20px;
   font-size: 23px;

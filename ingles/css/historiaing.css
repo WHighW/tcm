@@ -158,8 +158,8 @@ margin-left: 5px;
     text-align: center;
     width: 30%;
     float: right;
-    margin-right: 65px;
-    margin-top: -40px;
+    margin-right: 300px;
+    margin-top: -75px;
 }
 
 /* Tratamento da caixa de pesquisa de busca */
@@ -337,10 +337,9 @@ footer{
 .endereco a:hover{
   color: #898989;
 }
+
 .endereco {
-  margin-left: 40px;
   margin-right: 135px;
-  margin-top: 6px;
   padding-top: 2px;
 }
 #contendereco {
@@ -350,25 +349,24 @@ footer{
 }
 
 /* Contato do rodapé */
-#contato{
-    margin-left: 40px;
-    margin-top: 6px;;
-    padding-top: 2px;
+#contato {
+  margin-left: 40px;
 }
 
-#contatonumero{
-    padding-top: 6px;
-    color:rgb(255, 255, 255);
+#contatonumero {
+  margin-bottom:18px;
+  color: rgb(255, 255, 255);
 }
 
-#contatoemail a{
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+#contatoemail a {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
-#contatoemail a:hover{
-    color: #898989;
+#contatoemail a:hover {
+  color: #898989;
 }
 
 .copy p{
