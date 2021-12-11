@@ -217,7 +217,7 @@ margin-left: 5px;
 }
 
 #tituautores{
-    padding-bottom:30px;
+    padding-bottom:50px;
     color: purple;
     font-size:60px;
     font-family: fonte2;
@@ -230,12 +230,44 @@ margin-left: 5px;
     justify-content:center;
     display:flex;
 }
+#imgautores p{
+    font-size:15px;
+    font-family:verdana;
+    font-weight:bold;
+    margin-right:50px;
+    margin-left:50px;
+}
+#lucas{
+    margin-left:80px;
+}
+#lucas p{
+    margin-left:20px;
+    margin-right:80px;
+}
+#murillo p{
+    margin-right: 40px;
+}
 
 #imgautores2{
     width:100%;
     margin-bottom:100px;
     justify-content:center;
     display:flex;
+}
+#imgautores2 p{
+    font-family:verdana;
+    font-weight:bold;
+    font-size:15px;
+    margin-right:130px;
+    margin-left:50px;
+    right:50%;
+    left:50%;
+}
+#ratue{
+    margin-left:250px;
+}
+#montanha{
+    margin-right:200px;
 }
 
 .imagensautores {
